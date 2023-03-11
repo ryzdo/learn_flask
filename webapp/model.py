@@ -1,12 +1,10 @@
 from flask_sqlalchemy import SQLAlchemy, model
 
-# from sqlalchemy.orm import decl_api
-
 db = SQLAlchemy()
-base: model = db.Model
+Base: model = db.Model
 
 
-class News(base):
+class News(Base):
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String, nullable=False)
     url = db.Column(db.String, unique=True, nullable=False)
