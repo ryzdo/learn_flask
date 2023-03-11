@@ -1,5 +1,5 @@
 *.db
-config.py
+webapp/config.py
 .pre-commit-config.yaml
 
 # Byte-compiled / optimized / DLL files
