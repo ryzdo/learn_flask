@@ -13,7 +13,3 @@ class News(Base):
 
     def __repr__(self):
         return "<News {} {}>".format(self.title, self.url)
-
-
-if __name__ == "__main__":
-    new_news = News()
