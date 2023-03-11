@@ -1,8 +1,9 @@
-from flask_sqlalchemy import SQLAlchemy
-from sqlalchemy.orm.decl_api import Model
+from flask_sqlalchemy import SQLAlchemy, model
+
+# from sqlalchemy.orm import decl_api
 
 db = SQLAlchemy()
-base: Model = db.Model
+base: model = db.Model
 
 
 class News(base):
