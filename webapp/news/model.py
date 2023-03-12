@@ -1,4 +1,4 @@
-from webapp.model import Base, db
+from webapp.db import Base, db
 
 
 class News(Base):
