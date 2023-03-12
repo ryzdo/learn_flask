@@ -4,7 +4,7 @@ from flask_login import current_user, login_user, logout_user
 from webapp.user.forms import LoginForm
 from webapp.user.model import User
 
-blueprint = Blueprint("user", __name__, url_prefix="/users")
+blueprint = Blueprint("user", __name__, url_prefix="/user")
 
 
 @blueprint.route("/login")
