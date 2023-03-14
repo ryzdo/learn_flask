@@ -14,9 +14,9 @@ def create_app():
     app.config.from_pyfile("config.py")
     db.init_app(app)
 
-    app.register_blueprint(admin_blueprint)
     app.register_blueprint(news_blueprint)
     app.register_blueprint(user_blueprint)
+    app.register_blueprint(admin_blueprint)
 
     login_manager = LoginManager()
     login_manager.init_app(app)
